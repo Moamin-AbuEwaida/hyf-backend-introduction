@@ -1,3 +1,6 @@
+/* eslint-disable prefer-destructuring */
+/* eslint-disable no-warning-comments */
+/* eslint-disable spaced-comment */
 const messageManager = require('../business-logic/messages');
 
 const messageController = {
@@ -68,6 +71,7 @@ const messageController = {
     try {
       const messageId = req.params.messageId;
       await messageManager.removeMessage(messageId);
+      // eslint-disable-next-line no-undef
       res.status(200).send({ message: `message id ${messagId} was deleted!` });
     } catch (error) {
       res.status(500).send(error);

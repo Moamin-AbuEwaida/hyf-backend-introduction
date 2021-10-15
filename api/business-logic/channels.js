@@ -1,3 +1,4 @@
+/* eslint-disable no-return-await */
 const objectId = require('objectid');
 
 const persistentDataAccess = require('../data-access/persistent');
@@ -8,6 +9,7 @@ const channelManager = {
   createChannel: async (channelName) => {
     const id = objectId().toString();
     const channel = {
+      // eslint-disable-next-line object-shorthand
       id: id,
       name: channelName,
     };

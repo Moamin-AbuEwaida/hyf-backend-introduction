@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 const channelManager = require('../business-logic/channels');
 
 const channelController = {
