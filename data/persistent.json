@@ -1,5 +1,29 @@
 {
   "users": [],
-  "channels": [],
-  "messages": []
+  "channels": [
+    {
+      "id": "6169437a66f8c0b235000001",
+      "name": "Test"
+    },
+    {
+      "id": "6169438f66f8c0b235000003",
+      "name": "tasks"
+    }
+  ],
+  "messages": [
+    {
+      "text": "good morning",
+      "id": "6169438366f8c0b235000002",
+      "user": "Moo",
+      "channelId": "6169437a66f8c0b235000001",
+      "date": "2021-10-15T09:01:55.662Z"
+    },
+    {
+      "text": "1st task ",
+      "id": "6169439c66f8c0b235000004",
+      "user": "Moo",
+      "channelId": "6169438f66f8c0b235000003",
+      "date": "2021-10-15T09:02:20.594Z"
+    }
+  ]
 }
