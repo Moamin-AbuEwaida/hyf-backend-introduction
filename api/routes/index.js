@@ -1,6 +1,9 @@
-'use strict';
-const channelRoutes = require('./channels.js');
-const messageRoutes = require('./messages.js');
+/* eslint-disable lines-around-directive */
+/* eslint-disable import/order */
+
+const channelRoutes = require('./channels');
+const messageRoutes = require('./messages');
+const userRoutes = require('./users');
 
 const express = require('express');
 
@@ -9,6 +12,7 @@ const express = require('express');
 const router = express.Router();
 router.use('/channels', channelRoutes);
 router.use('/', messageRoutes);
+router.use('/users', userRoutes);
 
 // use routes with this router
 

@@ -1,3 +1,7 @@
+/* eslint-disable no-return-await */
+/* eslint-disable object-shorthand */
+/* eslint-disable no-warning-comments */
+
 const objectId = require('objectid');
 
 const persistentDataAccess = require('../data-access/persistent');
