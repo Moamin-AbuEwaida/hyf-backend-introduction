@@ -34,6 +34,8 @@ const userController = {
       const password = body.password;
       const email = body.email;
       /*
+      for implementing authorization with a saved token at the database!
+
       const hashKey = 'HashKetTest';
 
       const token = crypto
@@ -47,8 +49,9 @@ const userController = {
         email,
         // token,
       });
-      const access = jwt.sign({ user }, 'mySecretKey');
-      res.status(200).send(`your registration token is ${access} `); //token
+      jwt.sign(user, 'mySecretKey', (err, access) => {
+        res.status(200).send(`your registration token is ${access} `); //token
+      });
     } catch (error) {
       console.log('hello from controller!');
       res.status(500).send({ ok: false, message: `something went wrong` });
